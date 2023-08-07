@@ -1,0 +1,113 @@
+.btn{
+    padding: 25px 60px;
+    display: inline;
+    background-color: #ff36ab;
+    border-radius: 20px;
+    columns: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+body{
+    background: url(https://wallpapercrafter.com/th800/129465-digital-art-flowers-watermarked-ryky.png) no-repeat;
+    background-size: cover;
+    margin:0px
+    
+}
+
+img{
+    border-radius: 50px;
+    right: 10%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+
+#btn-xl{
+    left: 30%;
+}
+
+#btn-is{
+    left: 70%;
+}
+
+.btn:hover{
+    background-color: #3772ff  ;
+}
+
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 3, 3, 0.479);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    
+}
+
+.modal{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: rgba(0, 255, 255, 0.473);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#modalXL{
+    background-color: #ff36ab7c;
+}
+
+#modalIS{
+    background-color: #3773ff79;
+}
+
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0,-20px,-5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal{
+    animation: abrirmodal 0.5s;
+}
+
+
+
+

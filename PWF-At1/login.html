@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+<style>
+    .entrada {
+        border: 10px;
+        border-radius: 15px;
+    }
+
+    body {
+        color: #db9d47;
+        background-image: url(https://usagif.com/wp-content/uploads/gif/outerspace-6.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .telaLogin {
+        backdrop-filter: blur(10px);
+        /* background-color: rgba(0, 255, 255, 0.384); */
+        background-color: rgba(38, 0, 255, 0.349);
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 15%;
+        text-align: center;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .button{
+        font-size: 18px;
+        border-radius: 15px;
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="conteiner">
+        <div class="telaLogin">
+            <form>
+                <table align="center" border="0" cellpadding="5" cellspacing="0" width="300">
+                    <tr>
+                        <td colspan="7" align="center">
+                            <h2>Tela de Login</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="username">E-mail:</label></td>
+                        <td><input type="email" name="username" id="username" required class="entrada"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="password">Senha:</label></td>
+                        <td><input type="password" name="password" id="password" required class="entrada"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" align="center"><a href="index.html">
+                            <input type="button" value="Entrar" class="button">
+                            </a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
