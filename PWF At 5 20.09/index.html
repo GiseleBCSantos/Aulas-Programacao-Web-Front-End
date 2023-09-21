@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('https://res.cloudinary.com/practicaldev/image/fetch/s--whc8agJP--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x9otbqzrcmy2bxvgjfy1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .placa-proib-bicicleta {
+            list-style-image: url(./assets/placa-bicicleta.png);
+        }
+
+        .placa-proib-pedestre {
+            list-style-image: url(./assets/placa-pedestre.png);
+        }
+
+        .placa-areaescolar {
+            list-style-image: url(./assets/placa-escolar.jpeg);
+        }
+
+        .placa-proib-direita {
+            list-style-image: url(./assets/proibido-direita.png);
+        }
+
+        .placa-mao-dupla {
+            list-style-image: url(/assets/placa-dupla.jpg);
+        }
+
+        div{
+            border: 3px solid black;
+            /* width: 40%; */
+            /* padding-left: 5%; */
+            margin-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+            min-width: 100px;
+            max-width: 500px;
+            /* height: auto;
+            width: auto; */
+        }
+
+        .box{
+            background-color: rgba(40, 118, 185, 0.61);
+            border-color: navy;
+        }
+        .title{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .listas{
+            background-color: rgba(114, 156, 192, 0.541);
+            border-color: rgb(35, 35, 124);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1 class="title">Minhas Listas Favoritas</h1>
+
+
+        <div class="listas">    
+            <h2>5 regras de bom comportamento:</h2>
+            <ol class="alg-romanos">
+                <li>Diga "por favor" e "obrigada";</li>
+                <li>Sorria;</li>
+                <li>Segure a porta para quem estiver atrás de você;</li>
+                <li>Procure atender ligações em lugares mais isolados;</li>
+                <li>Tolere mais o comportamento das pessoas.</li>
+            </ol>
+        </div>
+
+        <br>
+
+        <div class="listas">
+            <h2>5 emojis favoritos:</h2>
+            <ul>
+                <li>&#9748;</li>
+                <li>&#127744;</li>
+                <li>&#127746;</li>
+                <li>&#127748;</li>
+                <li>&#127756;</li>
+            </ul>
+        </div>
+
+        <div class="listas">
+            <h2>5 Placas de trânsito e seus significados:</h2>
+            <ul>
+                <li class="placa-proib-bicicleta">Proibido bicicletas;</li>
+                <li class="placa-proib-pedestre">Proibido pedestre;</li>
+                <li class="placa-areaescolar">Área escolar;</li>
+                <li class="placa-proib-direita">Proibido;</li>
+                <li class="placa-mao-dupla">Via de mão dupla.</li>
+            </ul>
+        </div>
+
+
+        <div class="listas">
+            <h2>Introdução a programação com python:</h2>
+            <dl>
+                <dt>Capítulo 10 - Classes e objetos:</dt>
+                <dd>10.1 - Objetos como representação do mundo real</dd>
+                <dd>10.2 - Passagem de parâmetros</dd>
+                <dd>10.3 - Exemplo de um banco</dd>
+                <dd>10.4 - Herança</dd>
+                <dd>10.5 - Desenvolvendo uma classe para controlar listas</dd>
+                <dd>10.6 - Revisitando a agenda</dd>
+                <dd>10.7 - Criando exceções</dd>
+
+
+                <dt>Capítulo 11 - Banco de dados</dt>
+                <dd>11.1 - Conceitos básicos</dd>
+                <dd>11.2 - SOL</dd>
+                <dd>11.3 - Python & SQLite</dd>
+                <dd>11.4 - Consultando registros</dd>
+                <dd>11.5 - Atualizando registros</dd>
+                <dd>11.6 - Apagando registros</dd>
+                <dd>11.7 - Simplificando o acesso sem cursores</dd>
+                <dd>11.8 - Acessando os campos como em um dicionário</dd>
+                <dd>11.9 - Gerando uma chave primária</dd>
+                <dd>11.10 - Alterando a tabela</dd>
+                <dd>11.11 - Agrupando dados</dd>
+                <dd>11.12 - Trabalhando com datas</dd>
+                <dd>11.13 - Chaves e relações</dd>
+                <dd>11.14 - Convertendo a agenda para utilizar um banco de dados</dd>
+            </dl>
+        </div>
+
+    </div>
+</body>
+
+</html>
