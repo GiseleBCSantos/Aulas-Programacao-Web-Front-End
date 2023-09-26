@@ -1,0 +1,108 @@
+body {
+    width: 80%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+
+.centralizar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+}
+
+.bandeira-piaui {
+    background-image: url('./assets/Bandeira_do_Piauí.svg\ \(1\).png');
+}
+
+.brasao-pi {
+    background-image: url('./assets/Brasão_do_Piauí.svg.png');
+}
+
+.icones a {
+    text-indent: -99999px;
+    display: block;
+}
+
+table {
+    table-layout: fixed;
+    text-align: center;
+    max-width: 95%;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+section {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+i {
+    width: 50px;
+    height: 50px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.icones-sociais a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    text-indent: -99999px;
+}
+
+.icones-sociais li {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.github {
+    background-image: url("assets/github.png");
+}
+
+.twitter{
+    background-image: url('assets/twitter.png');
+}
+
+.linkedin{
+    background-image: url('assets/linkedin.png');
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color:blue;
+}
+
+a:visited{
+    color: blue;
+}
+
+.links a:hover{
+    color: white;
+    background-color: blue;
+}
+
+.links a:active{
+    color: white;
+    background-color: blue;
+}
+
+.escurecer{
+    width: 100px;
+    height: 100px;
+}
