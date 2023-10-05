@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(0, 38, 255, 0.831);
+    color: rgb(191, 191, 191);
+}
+
+h2 {
+    background-image: linear-gradient(to left, rgb(234, 229, 60), rgb(102, 206, 102));
+
+}
+
+.par1 {
+    text-align: center;
+}
+
+.par2 {
+    text-align: right;
+}
+
+.par3 {
+    text-align: justify;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+.background-img1 {
+    background-image: url("./assets/ifpi.png");
+    background-repeat: no-repeat;
+    height: 258px;
+    width: 195px;
+    text-indent: -99999px;
+    text-align: right;
+}
+
+
+.lista-imagem {
+    list-style-image: url('./assets/ifpi32.png');
+}
+
+.centro{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    align-items: center;
+}
