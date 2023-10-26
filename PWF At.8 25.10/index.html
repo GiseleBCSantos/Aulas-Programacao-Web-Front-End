@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 25/10</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        .tabela1, td{
+            border: 1px solid black;
+        }
+
+        .tabela2, tr, th, td{
+            border: 1px solid black;
+        }
+        .valores-tabela2{
+            text-align: center;
+        }
+
+        .tabela4{
+            width: 400px;
+            height: 300px;
+        }
+
+        .altura-topo{
+            vertical-align: top;
+        }
+
+        .altura-bottom{
+            vertical-align: bottom;
+        }
+
+        .tabela5 td{
+            width: 50px;
+            height: 50px;
+        }
+
+
+        .peca-preta{
+            background-image: url('./assets/circulo-preto.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: center center;
+        }
+
+        .peca-branca{
+            background-image: url('./assets/Circulo_branco.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: center center;
+        }
+
+        .tabela5 tr:nth-child(even) td:nth-child(odd){
+            background-color:#4b3621;
+        }
+
+        .tabela5 tr:nth-child(odd) td:nth-child(even){
+            background-color:#4b3621;
+        }
+
+        .numero{
+            text-align: center;
+        }
+
+        table td, th{
+            padding: 10px;
+        }
+
+        .tabela6 td, th{
+            width: 50px;
+            height: 50px;
+        }
+
+        .tabela6 tr:nth-child(even) {
+            background-color: rgb(159, 255, 223);
+        }
+
+        .tabela6 td{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="tabela1">
+        <tr>
+            <th>Título</th>
+            <th>Diretor</th>
+            <th>Ano de lançamento</th>
+            <th>Gênero</th>
+            <th>Classificação</th>
+        </tr>
+        <tr>
+            <td>Diarios de um banana 1</td>
+            <td>Diretor do filme</td>
+            <td class="numero">2018</td>
+            <td>Comédia, infantil</td>
+            <td>Livre</td>
+        </tr>
+        <tr>
+            <td>Diarios de um banana 2</td>
+            <td>Diretor do filme</td>
+            <td class="numero">2019</td>
+            <td>Comédia, infantil</td>
+            <td>Livre</td>
+        </tr>
+        <tr>
+            <td>Diarios de um banana 3</td>
+            <td>Diretor do filme</td>
+            <td class="numero">2020</td>
+            <td>Comédia, infantil</td>
+            <td>Livre</td>
+        </tr>
+        <tr>
+            <td>Diarios de um banana 4</td>
+            <td>Diretor do filme</td>
+            <td class="numero">2021</td>
+            <td>Comédia, infantil</td>
+            <td>Livre</td>
+        </tr>
+    </table> 
+    <br><br>   
+
+    <table class="tabela2">
+        <tr>
+            <th rowspan="2">Alimentos</th>
+            <th>Calorias</th>
+            <th>Proteínas</th>
+            <th>Carboidratos</th>
+            <th>Gorduras</th>
+        </tr>
+        <tr>
+            <th>kcal</th>
+            <th>g</th>
+            <th>g</th>
+            <th>g</th>
+        </tr>
+        <tr>
+            <td>Maçã</td>
+            <td class="valores-tabela2 numero">52</td>
+            <td class="valores-tabela2 numero">0,3</td>
+            <td class="valores-tabela2 numero">13,8</td>
+            <td class="valores-tabela2 numero">0,2</td>
+        </tr>
+        <tr>
+            <td>Cenoura</td>
+            <td class="valores-tabela2 numero">41</td>
+            <td class="valores-tabela2 numero">0,9</td>
+            <td class="valores-tabela2 numero">9,6</td>
+            <td class="valores-tabela2 numero">0,2</td>
+        </tr>
+
+
+    </table>
+
+    <br><br>
+
+
+    <table class="tabela3">
+        <tr>
+            <th rowspan="2" colspan="2">Dados Pessoais</th>
+            <th colspan="3">Informações de Contato</th>
+        </tr>
+        <tr>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Endereço</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Nome Completo</td>
+            <td rowspan="3">Idade</td>
+            <td class="numero">1234-5678</td>
+            <td>exemplo@exemplo.com</td>
+            <td rowspan="3">Rua Exemplo, 123</td>
+        </tr>
+        <tr>
+            <td class="numero">2345-5678</td>
+            <td>exemplo2@exemplo.com</td>
+        </tr>
+        <tr>
+            <td class="numero">3456-5678</td>
+            <td>exemplo3@exemplo.com</td>
+        </tr>
+
+
+
+    </table>
+
+    <br><br>
+
+    <table class="tabela4">
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Idade</th>
+            <th>Altura</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Silva</td>
+            <td class="numero">25</td>
+            <td class="altura-topo numero">1,9m</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>Pereira</td>
+            <td class="numero">35</td>
+            <td class="numero">1,70m</td>
+        </tr>
+        <tr>
+            <td>Camila</td>
+            <td>Santos</td>
+            <td class="numero">28</td>
+            <td class="altura-bottom numero">1,50m</td>
+        </tr>
+
+
+
+
+    </table>
+
+    <br><br>
+
+    <table class="tabela5">
+        <tr>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+        </tr>
+        <tr>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+            <td> </td>
+            <td class="peca-preta"></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td> 
+        </tr>
+        <tr>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>   
+        </tr>
+        <tr>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td>
+            <td class="peca-branca"></td>
+            <td> </td> 
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="tabela6">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+        </tr>
+        <tr>
+            <td>(1,1)</td>
+            <td>(1,2)</td>
+            <td>(1,3)</td>
+            <td>(1,4)</td>
+            <td>(1,5)</td>
+            <td>(1,6)</td>
+            <td>(1,7)</td>
+            <td>(1,8)</td>
+            <td>(1,9)</td>
+            <td>(1,10)</td>
+        </tr>
+        <tr>
+            <td>(2,1)</td>
+            <td>(2,2)</td>
+            <td>(2,3)</td>
+            <td>(2,4)</td>
+            <td>(2,5)</td>
+            <td>(2,6)</td>
+            <td>(2,7)</td>
+            <td>(2,8)</td>
+            <td>(2,9)</td>
+            <td>(2,10)</td>
+        </tr>
+        <tr>
+            <td>(3,1)</td>
+            <td>(3,2)</td>
+            <td>(3,3)</td>
+            <td>(3,4)</td>
+            <td>(3,5)</td>
+            <td>(3,6)</td>
+            <td>(3,7)</td>
+            <td>(3,8)</td>
+            <td>(3,9)</td>
+            <td>(3,10)</td>
+        </tr>
+        <tr>
+            <td>(4,1)</td>
+            <td>(4,2)</td>
+            <td>(4,3)</td>
+            <td>(4,4)</td>
+            <td>(4,5)</td>
+            <td>(4,6)</td>
+            <td>(4,7)</td>
+            <td>(4,8)</td>
+            <td>(4,9)</td>
+            <td>(4,10)</td>
+        </tr>
+        <tr>
+            <td>(5,1)</td>
+            <td>(5,2)</td>
+            <td>(5,3)</td>
+            <td>(5,4)</td>
+            <td>(5,5)</td>
+            <td>(5,6)</td>
+            <td>(5,7)</td>
+            <td>(5,8)</td>
+            <td>(5,9)</td>
+            <td>(5,10)</td>
+        </tr>
+        <tr>
+            <td>(6,1)</td>
+            <td>(6,2)</td>
+            <td>(6,3)</td>
+            <td>(6,4)</td>
+            <td>(6,5)</td>
+            <td>(6,6)</td>
+            <td>(6,7)</td>
+            <td>(6,8)</td>
+            <td>(6,9)</td>
+            <td>(6,10)</td>
+        </tr>
+        <tr>
+            <td>(7,1)</td>
+            <td>(7,2)</td>
+            <td>(7,3)</td>
+            <td>(7,4)</td>
+            <td>(7,5)</td>
+            <td>(7,6)</td>
+            <td>(7,7)</td>
+            <td>(7,8)</td>
+            <td>(7,9)</td>
+            <td>(7,10)</td>
+        </tr>
+        <tr>
+            <td>(8,1)</td>
+            <td>(8,2)</td>
+            <td>(8,3)</td>
+            <td>(8,4)</td>
+            <td>(8,5)</td>
+            <td>(8,6)</td>
+            <td>(8,7)</td>
+            <td>(8,8)</td>
+            <td>(8,9)</td>
+            <td>(8,10)</td>
+        </tr>
+        <tr>
+            <td>(9,1)</td>
+            <td>(9,2)</td>
+            <td>(9,3)</td>
+            <td>(9,4)</td>
+            <td>(9,5)</td>
+            <td>(9,6)</td>
+            <td>(9,7)</td>
+            <td>(9,8)</td>
+            <td>(9,9)</td>
+            <td>(9,10)</td>
+        </tr>
+        <tr>
+            <td>(10,1)</td>
+            <td>(10,2)</td>
+            <td>(10,3)</td>
+            <td>(10,4)</td>
+            <td>(10,5)</td>
+            <td>(10,6)</td>
+            <td>(10,7)</td>
+            <td>(10,8)</td>
+            <td>(10,9)</td>
+            <td>(10,10)</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 
