@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 3</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgba(255, 127, 80, 0.16);
+        }
+        form {
+            margin: 0 auto;
+            display: block;
+            padding: 1em;
+            box-shadow: 1px 1px 2px 2px rgb(0, 128, 255);
+            border-radius: 1em;
+            background-color: rgba(0, 255, 255, 0.187);
+
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        form li+li {
+            margin-top: 1em;
+        }
+
+        .form1 label {
+            display: inline-block;
+            width: 135px;
+            text-align: right;
+        }
+
+        .form2 label {
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+        }
+
+        .botao {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .centralizar{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+        .search{
+            margin-left: 80%;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="centralizar">
+        <div class="search">
+            <input type="search" value="Pesquisa">
+        </div>
+        <h1>Formulário de cadastro</h1>
+        <form action="">
+            <fieldset class="form1">
+                <legend>Informações pessoais</legend>
+
+                <ul>
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text"><br>
+                    </li>
+
+                    <li>
+                        <label for="dt_nasc">Data de nascimento:</label>
+                        <input type="datetime-local"><br>
+                    </li>
+
+                    <li>
+                        <label for="cpf">CPF:</label>
+                        <input type="text"><br>
+                    </li>
+
+                    <li>
+                        <label for="cor_fav">Cor favorita:</label>
+                        <input type="color"><br>
+                    </li>
+
+                    <li>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel">
+                    </li>
+                </ul>
+
+
+                
+
+    
+    </fieldset><br><br>
+
+    <fieldset class="form2">
+        <legend>Dados de usuário</legend>
+            <ul>
+                <li>
+                    <label for="nome_usuario">Nome de usuário:</label>
+                    <input type="text">
+                </li>
+
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input type="email">
+                </li>
+
+                <li>
+                    <label for="senha">Senha:</label>
+                    <input type="password">
+                </li>
+            </ul>
+
+            <div class="botao">
+                <input type="submit" value="Finalizar cadastro">
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+
+    </form>
+</body>
+
+</html>
