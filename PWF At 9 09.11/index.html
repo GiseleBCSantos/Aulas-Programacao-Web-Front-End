@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 09.11</title>
+    <style>
+        .centralizar{
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        body{
+            margin: 0px;
+        }
+
+        form{
+            display: block;
+        }
+        
+        ul{
+            list-style: none;
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Atividade 09.11</h1>
+    <div class="centralizar">
+    <form action="http://exemplo.com/inscricao">
+        <fieldset>
+            <legend>Questão 1</legend>
+            <ul>
+                <li>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                </li>
+
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                </li>
+
+                <input type="submit" name="Enviar">
+            </ul>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Questão 2</legend>
+            <ul>
+                <li>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                </li>
+
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                </li>
+
+                <li>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="idade" placeholder="Insira sua idade" required>
+                </li>
+            </ul>
+
+            <input type="submit" name="enviar">
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Questão 3</legend>
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" maxlength="12" placeholder="Insira sua senha" required
+                pattern="{3,16}">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Questão 4</legend>
+            <p>Qual o seu nível de satisfação com o nosso serviço?</p>
+            <input type="radio" name="perg_satisfacao" id="satisfeito" value="Satisfeito">
+            <label for="satisfeito">Satisfeito</label><br>
+            <input type="radio" name="perg_satisfacao" id="neutro" value="Neutro">
+            <label for="neutro">Neutro</label><br>
+            <input type="radio" name="perg_satisfacao" id="insatisfeito" value="Insatisfeito">
+            <label for="insatisfeito">Insatisfeito</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Questão 5</legend>
+            <p>Quais newsletters deseja assinar?</p>
+            <input type="checkbox" name="novidades" id="novidades" value="Novidades">
+            <label for="novidades">Novidades</label><br>
+            <input type="checkbox" name="promocoes" id="promocoes" value="promocoes">
+            <label for="promocoes">Promoções</label><br>
+            <input type="checkbox" name="art_tec" id="art_tec" value="art_tec">
+            <label for="art_tec">Artigos técnicos</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Questão 6</legend>
+            <label for="frequencia">Frequência com que deseja receber as newsletters:</label>
+            <select name="frequencia" id="frequencia" required>
+                <option value="diariamente">Diariamente</option>
+                <option value="semanalmente">Semanalmente</option>
+                <option value="mensalmente">Mensalmente</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Questão 7</legend>
+            <label for="opiniao">Como podemos melhorar nosso serviço?</label><br>
+            <textarea name="opiniao" id="opiniao" cols="30" rows="10"></textarea>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Questão 8</legend>
+            <button>Tag button</button><br>
+            <input type="submit" name="Submit" id="submit"><br>
+            <input type="reset" name="reset" id="reset">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Questão 9</legend>
+            <label for="produtos">Produtos:</label>
+            <input list="produtos" name="produto" id="produto">
+            <datalist id="produtos" required>
+                <option value="camisa">
+                <option value="calca">
+                <option value="sapato">
+                <option value="moletom">
+            </datalist>
+            <br>
+            <input type="submit">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 10</legend>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 11</legend>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="(___)_ ____-____">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 12</legend>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" minlength="18" maxlength="65">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 13</legend>
+            <label for="urgencia">Qual seu nível de urgência de uma resposta?</label>
+            <input type="range" name="urgencia" id="urgencia" min="1" max="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 14</legend>
+            <label for="dt_nasc">Insira sua data de nascimento:</label>
+            <input type="date" name="dt_nasc" id="dt_nasc">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 15</legend>
+            <label for="horario">Horario preferencial para receber ligações:</label>
+            <input type="time" name="horario" id="horario">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 16</legend>
+            <label for="cor">Selecione a cor para o tema do seu perfil:</label>
+            <input type="color" name="cor" id="cor">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questão 17</legend>
+            <p>Fieldset e Legend (já utilizados)</p>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Questão 19</legend>
+            <p>Placeholder e required (já utilizados)</p>
+        </fieldset>
+
+    </form>
+</div>
+
+</body>
+
+</html>
