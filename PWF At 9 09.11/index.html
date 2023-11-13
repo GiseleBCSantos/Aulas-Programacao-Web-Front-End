@@ -12,6 +12,12 @@
             height: 100vh;
             display: flex;
         }
+        
+        .q8{
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+        }
 
         body{
             margin: 0px;
@@ -26,12 +32,35 @@
         }
         h1{
             text-align: center;
+            margin-right: 13%;
+        }
+
+        .grupo{
+            text-align: left;
+            display: inline-block;
+            float: left;
+        }
+        .grupo ul {
+            list-style: circle;
+        }
+        .centro{
+            text-align: center;
         }
 
     </style>
 </head>
 
 <body>
+
+    <div class="grupo">
+        <fieldset class="grupo">
+            <legend>Integrantes do grupo:</legend>
+            <ul>
+                <li>Gisele Bianca Costa Santos</li>
+                <li>José Gabriel Moreira Pereira</li>
+            </ul>
+        </fieldset>
+    </div>
     <h1>Atividade 09.11</h1>
     <div class="centralizar">
     <form action="http://exemplo.com/inscricao">
@@ -41,18 +70,22 @@
                 <li>
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
-                </li>
+                </li><br>
 
                 <li>
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                </li><br>
+                
+                <li class="centro">
+                    <input type="submit" name="Enviar">
                 </li>
 
-                <input type="submit" name="Enviar">
+                
             </ul>
         </fieldset>
 
-
+        <br>
 
         <fieldset>
             <legend>Questão 2</legend>
@@ -60,23 +93,26 @@
                 <li>
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
-                </li>
+                </li><br>
 
                 <li>
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="Insira seu email" required>
-                </li>
+                </li><br>
 
                 <li>
                     <label for="idade">Idade:</label>
                     <input type="number" name="idade" id="idade" placeholder="Insira sua idade" required>
+                </li><br>
+                <li class="centro">
+                    <input type="submit" name="Enviar">
                 </li>
             </ul>
+            
+            
+        </fieldset><br>
 
-            <input type="submit" name="enviar">
-        </fieldset>
-
-
+        <br>
 
         <fieldset>
             <legend>Questão 3</legend>
@@ -84,7 +120,7 @@
             <input type="password" name="password" id="password" maxlength="12" placeholder="Insira sua senha" required
                 pattern="{3,16}">
         </fieldset>
-
+        <br>
 
         <fieldset>
             <legend>Questão 4</legend>
@@ -96,7 +132,7 @@
             <input type="radio" name="perg_satisfacao" id="insatisfeito" value="Insatisfeito">
             <label for="insatisfeito">Insatisfeito</label>
         </fieldset>
-
+        <br>
 
         <fieldset>
             <legend>Questão 5</legend>
@@ -108,7 +144,7 @@
             <input type="checkbox" name="art_tec" id="art_tec" value="art_tec">
             <label for="art_tec">Artigos técnicos</label>
         </fieldset>
-
+        <br>
 
         <fieldset>
             <legend>Questão 6</legend>
@@ -119,22 +155,22 @@
                 <option value="mensalmente">Mensalmente</option>
             </select>
         </fieldset>
-
+        <br>
 
         <fieldset>
             <legend>Questão 7</legend>
             <label for="opiniao">Como podemos melhorar nosso serviço?</label><br>
             <textarea name="opiniao" id="opiniao" cols="30" rows="10"></textarea>
         </fieldset>
+        <br>
 
-
-        <fieldset>
+        <fieldset class="q8">
             <legend>Questão 8</legend>
             <button>Tag button</button><br>
             <input type="submit" name="Submit" id="submit"><br>
             <input type="reset" name="reset" id="reset">
         </fieldset>
-
+        <br>
 
         <fieldset>
             <legend>Questão 9</legend>
@@ -146,62 +182,72 @@
                 <option value="sapato">
                 <option value="moletom">
             </datalist>
-            <br>
+            <br><br>
             <input type="submit">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 10</legend>
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 11</legend>
             <label for="tel">Telefone:</label>
             <input type="tel" name="tel" id="tel" placeholder="(___)_ ____-____">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 12</legend>
             <label for="idade">Idade:</label>
             <input type="number" name="idade" id="idade" minlength="18" maxlength="65">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 13</legend>
             <label for="urgencia">Qual seu nível de urgência de uma resposta?</label>
             <input type="range" name="urgencia" id="urgencia" min="1" max="10">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 14</legend>
             <label for="dt_nasc">Insira sua data de nascimento:</label>
             <input type="date" name="dt_nasc" id="dt_nasc">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 15</legend>
             <label for="horario">Horario preferencial para receber ligações:</label>
             <input type="time" name="horario" id="horario">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 16</legend>
             <label for="cor">Selecione a cor para o tema do seu perfil:</label>
             <input type="color" name="cor" id="cor">
         </fieldset>
+        <br>
 
         <fieldset>
             <legend>Questão 17</legend>
             <p>Fieldset e Legend (já utilizados)</p>
         </fieldset>
+        <br>
 
 
         <fieldset>
             <legend>Questão 19</legend>
             <p>Placeholder e required (já utilizados)</p>
         </fieldset>
+        <br>
 
     </form>
 </div>
