@@ -1,0 +1,146 @@
+body a, .navbar-brand{
+    color: white; 
+    text-decoration: none;
+}
+
+body a:hover{
+    text-decoration:underline;
+    color: white !important;
+}
+
+.navbar{
+    background-image: url('./assets/header.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 162px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+}
+
+/* html { 
+    background: url('./assets/header.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+
+/* @media (max-width: 2000px){
+    .navbar{
+        background-image: url('./assets/header.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 162px;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .navbar{
+        background-image: url('./assets/header3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        height: 162px;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+} */
+
+
+
+.personagens .list-group-item img{
+    height: 100px;
+    width: 120px;
+}
+
+
+
+.conteudo{
+    padding: 20px;
+    margin-top: 70px;
+}
+
+/* .borda-interna{
+    width: 95%;
+    height: 95%;
+    border: 1px solid white;
+    border-radius: 10px;
+} */
+
+nav {
+    /* Adapte conforme necessário */
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+    width: auto;
+    
+}
+
+aside {
+    /* Adapte conforme necessário */
+    background-color: #f0f0f0a6;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 100vh;
+}
+
+main{
+    background-color: #f0f0f0a6;
+    border-radius: 10px;
+    
+}
+
+.linha-2{
+    margin-top: 162px;
+
+}
+
+
+
+h2, h3{
+    border-bottom: 1px solid grey;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.centralizar{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-image: url('./assets/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    color: white;
+}
+
+nav, main, aside{
+    padding: 20px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.63);
+    color:white;
+}
+
+footer{
+    color: white;
+}
